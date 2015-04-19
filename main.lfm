@@ -1,0 +1,72 @@
+object FormMain: TFormMain
+  Left = 283
+  Height = 380
+  Top = 175
+  Width = 739
+  Caption = 'FormMain'
+  ClientHeight = 380
+  ClientWidth = 739
+  Color = clNone
+  OnClick = FormClick
+  OnCreate = FormCreate
+  OnResize = FormResize
+  LCLVersion = '1.2.6.0'
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 20
+    Top = 360
+    Width = 739
+    Panels = <    
+      item
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+  object HeaderControl1: THeaderControl
+    Left = 0
+    Height = 30
+    Top = 0
+    Width = 739
+    DragReorder = False
+    Sections = <    
+      item
+        Alignment = taCenter
+        MaxWidth = 1000
+        Text = 'Диоды'
+        Width = 80
+        Visible = True
+      end    
+      item
+        Alignment = taCenter
+        Text = 'Таблицы'
+        Width = 80
+        Visible = True
+      end    
+      item
+        Alignment = taCenter
+        Text = 'Графики'
+        Width = 80
+        Visible = True
+      end    
+      item
+        Alignment = taCenter
+        Text = 'Очистить'
+        Width = 80
+        Visible = True
+      end    
+      item
+        Alignment = taCenter
+        Text = 'Обновить'
+        Width = 80
+        Visible = True
+      end    
+      item
+        Alignment = taCenter
+        Text = 'Выход'
+        Width = 80
+        Visible = True
+      end>
+    OnSectionClick = HeaderControl1SectionClick
+    Align = alTop
+  end
+end
